@@ -7,8 +7,8 @@
                    "codex_agents":  6,
                    "claude_agents":  6,
                    "plugins":  3,
-                   "total_files_excluding_generated":  631,
-                   "total_bytes_excluding_generated":  4668521
+                   "total_files_excluding_generated":  630,
+                   "total_bytes_excluding_generated":  4672896
                },
     "skills":  [
                    {
