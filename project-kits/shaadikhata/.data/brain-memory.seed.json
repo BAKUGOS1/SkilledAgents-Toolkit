@@ -1,0 +1,21 @@
+[
+  {
+    "id": "mem_watermelon_ui_skill_rule",
+    "content": "Watermelon UI is a shadcn-style component registry for Tailwind CSS v4 projects. Use it when the user asks for modern responsive customizable UI components, shadcn registry components, card-split-accordian, landing-page FAQ/feature accordions, or premium component sections.",
+    "category": "skill_rule",
+    "tags": [
+      "watermelon-ui",
+      "shadcn",
+      "tailwind-v4",
+      "ui-components",
+      "skill-routing"
+    ],
+    "source": "manual",
+    "confidence": 0.92,
+    "created_at": "2026-05-31T00:00:00.000Z",
+    "updated_at": "2026-05-31T00:00:00.000Z",
+    "last_used_at": null,
+    "is_sensitive": false,
+    "is_approved": true
+  }
+]

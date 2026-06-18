@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "brandName": "Karynth AgentOS",
+  "compatibilityName": "Phere 9-Agent Manager",
+  "project": {
+    "id": "phere-shaadikhata",
+    "name": "Phere / Shaadikhata",
+    "type": "react-vite-pwa",
+    "description": "Mobile-first Indian wedding finance and planning PWA.",
+    "localFirst": true
+  },
+  "runtime": {
+    "default": "local",
+    "optional": ["voltagent"],
+    "localModelProvider": "none",
+    "allowPaidModels": false
+  },
+  "agents": {
+    "core": [
+      "orchestrator",
+      "planner",
+      "product",
+      "frontend",
+      "backend",
+      "database",
+      "tester",
+      "production",
+      "security"
+    ],
+    "enterprise": [
+      "architect",
+      "performance",
+      "observability",
+      "mobile",
+      "accessibility",
+      "documentation",
+      "data-ai"
+    ],
+    "business": [
+      "marketing",
+      "sales",
+      "customer-success",
+      "support",
+      "finance-strategy",
+      "legal-compliance"
+    ]
+  },
+  "docs": [
+    "AGENTS.md",
+    "README.md",
+    "docs/ARCHITECTURE.md",
+    "docs/ROADMAP.md",
+    "DEPLOYMENT_GUIDE.md",
+    "docs/PHERE_9_AGENT_MANAGER_SYSTEM.md",
+    "docs/PHERE_AGENT_SYSTEM_NEXT_STEPS.md",
+    "docs/KARYNTH_AGENTOS_RESEARCH_CATALOG.md",
+    "docs/KARYNTH_AGENTOS_CLIENT_GUIDE.md"
+  ],
+  "commands": {
+    "test": "npm run test",
+    "build": "npm run build",
+    "capacitorBuild": "npm run cap:build",
+    "agentosPlan": "npm run agentos:plan -- \"<task>\"",
+    "agentosStatus": "npm run agentos:status",
+    "legacyAgentsPlan": "npm run agents:codex -- \"<task>\""
+  },
+  "protectedPaths": [
+    ".env",
+    ".env.local",
+    ".env.production",
+    "supabase/.env",
+    ".agents/status/",
+    ".agents/handoff/",
+    ".agents/runs/",
+    ".data/"
+  ],
+  "approvalGates": [
+    "live deploy",
+    "production SQL",
+    "secret rotation",
+    "data deletion",
+    "destructive git",
+    "paid model providers"
+  ],
+  "notebooklm": {
+    "enabled": false,
+    "notebookId": "",
+    "boundary": "Research accelerator only; local files and command output remain source of truth."
+  },
+  "brainMemory": {
+    "provider": "json",
+    "path": ".data/brain-memory.json",
+    "scopes": ["user", "project", "run"],
+    "projectId": "phere-shaadikhata",
+    "projectDecisionApprovalRequired": true,
+    "rejects": [
+      "secrets",
+      "OTP codes",
+      "customer data",
+      "payment data",
+      "identity documents",
+      "exact personal addresses"
+    ]
+  }
+}

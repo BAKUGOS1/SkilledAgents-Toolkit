@@ -1,0 +1,12 @@
+{
+  "skills": [
+    {
+      "name": "emil-design-eng",
+      "source": "https://github.com/emilkowalski/skills",
+      "path": "skills/emil-design-eng",
+      "distribution": "reference-only",
+      "reason": "The upstream repository did not declare a redistribution license when this toolkit was assembled.",
+      "install": "Use Codex $skill-installer with repo emilkowalski/skills and path skills/emil-design-eng."
+    }
+  ]
+}

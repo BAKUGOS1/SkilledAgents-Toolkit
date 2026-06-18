@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Engineering Router"
+  short_description: "Routes prompts to the right expert skills"
+  default_prompt: "Use $product-engineering-auditor to route this prompt through the right specialist skills, then give a practical implementation-focused answer."

@@ -1,0 +1,30 @@
+{
+  "name": "phere",
+  "version": "0.1.0",
+  "description": "Phere 9-Agent Manager workflow for Codex.",
+  "author": {
+    "name": "Mohit Kumar",
+    "url": "https://github.com/BAKUGOS1"
+  },
+  "homepage": "https://github.com/BAKUGOS1/SkilledAgents-Toolkit#phere-plugin",
+  "repository": "https://github.com/BAKUGOS1/SkilledAgents-Toolkit",
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Phere",
+    "shortDescription": "Route Phere tasks through the 9-Agent Manager.",
+    "longDescription": "Adds the Phere 9-Agent Manager skill for evidence-based work on the Shaadikhata and Phere app, including orchestration, tester review, production and security gates, Supabase caution, and local-first constraints.",
+    "developerName": "BAKUGOS1",
+    "category": "Coding",
+    "capabilities": [
+      "Project Workflow",
+      "Code Review",
+      "Quality Gates"
+    ],
+    "defaultPrompt": [
+      "Use the Phere 9-Agent Manager for this task",
+      "Review this Phere change through the required gates",
+      "Plan and verify this Shaadikhata implementation"
+    ]
+  }
+}

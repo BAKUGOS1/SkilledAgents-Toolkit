@@ -1,0 +1,5 @@
+interface:
+  display_name: "Phere Creative Director"
+  short_description: "Phere website design and release QA"
+  default_prompt: "Use $phere-creative-director to review or improve the Phere website."
+

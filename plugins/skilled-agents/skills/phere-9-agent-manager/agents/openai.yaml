@@ -1,0 +1,8 @@
+interface:
+  display_name: "Phere 9-Agent Manager"
+  short_description: "Enterprise-grade app agent manager"
+  brand_color: "#7A1F2B"
+  default_prompt: "Use $phere-9-agent-manager to route a Phere app task through the right engineering, quality, production, and optional business agents."
+
+policy:
+  allow_implicit_invocation: true

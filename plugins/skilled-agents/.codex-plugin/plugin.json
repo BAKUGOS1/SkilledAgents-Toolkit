@@ -1,0 +1,39 @@
+{
+  "name": "skilled-agents",
+  "version": "1.0.0",
+  "description": "Reusable Codex skills and project agent workflows for design, engineering, QA, documentation, and product delivery.",
+  "author": {
+    "name": "Mohit Kumar",
+    "url": "https://github.com/BAKUGOS1"
+  },
+  "homepage": "https://github.com/BAKUGOS1/SkilledAgents-Toolkit#readme",
+  "repository": "https://github.com/BAKUGOS1/SkilledAgents-Toolkit",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "agent-skills",
+    "custom-agents",
+    "qa",
+    "design",
+    "developer-tools"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "SkilledAgents",
+    "shortDescription": "Reusable skills and agent workflows.",
+    "longDescription": "A portable toolkit of Codex skills and project workflows for software engineering, product design, QA, documentation, Supabase, Stitch, Phere, NUUDE, and Wrkly work.",
+    "developerName": "BAKUGOS1",
+    "category": "Coding",
+    "capabilities": [
+      "Reusable Skills",
+      "Project Workflows",
+      "Quality Gates"
+    ],
+    "defaultPrompt": [
+      "Choose the best installed skill for this task",
+      "Audit this project and implement the highest-value fixes",
+      "Run the relevant QA and verification workflow"
+    ]
+  }
+}
+

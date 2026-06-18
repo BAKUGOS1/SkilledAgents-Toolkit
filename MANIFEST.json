@@ -1,0 +1,511 @@
+﻿{
+    "schema_version":  1,
+    "repository":  "BAKUGOS1/SkilledAgents-Toolkit",
+    "purpose":  "Portable open-source toolkit for reusable Codex skills, custom agents, plugins, project kits, and SDK examples.",
+    "counts":  {
+                   "archived_skills":  41,
+                   "codex_agents":  6,
+                   "claude_agents":  6,
+                   "plugins":  3,
+                   "total_files_excluding_generated":  631,
+                   "total_bytes_excluding_generated":  4668521
+               },
+    "skills":  [
+                   {
+                       "name":  "find-skills",
+                       "description":  "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
+                       "skill_md":  "skills/agents-global/find-skills/SKILL.md",
+                       "package_root":  "skills/agents-global/find-skills",
+                       "scope":  "agents-global",
+                       "has_openai_yaml":  false,
+                       "file_count":  1,
+                       "byte_count":  5588
+                   },
+                   {
+                       "name":  "notebooklm",
+                       "description":  "Complete API for Google NotebookLM - full programmatic access including features not in the web UI. Create notebooks, add sources, generate all artifact types, download in multiple formats. Activates on explicit /notebooklm or intent like \"create a podcast about X",
+                       "skill_md":  "skills/agents-global/notebooklm/SKILL.md",
+                       "package_root":  "skills/agents-global/notebooklm",
+                       "scope":  "agents-global",
+                       "has_openai_yaml":  false,
+                       "file_count":  1,
+                       "byte_count":  36374
+                   },
+                   {
+                       "name":  "stitch::code-to-design",
+                       "description":  "\u003e-",
+                       "skill_md":  "skills/codex/code-to-design/SKILL.md",
+                       "package_root":  "skills/codex/code-to-design",
+                       "scope":  "codex",
+                       "has_openai_yaml":  false,
+                       "file_count":  1,
+                       "byte_count":  3007
+                   },
+                   {
+                       "name":  "design-md",
+                       "description":  "Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files",
+                       "skill_md":  "skills/codex/design-md/SKILL.md",
+                       "package_root":  "skills/codex/design-md",
+                       "scope":  "codex",
+                       "has_openai_yaml":  false,
+                       "file_count":  3,
+                       "byte_count":  19771
+                   },
+                   {
+                       "name":  "doc-coauthoring",
+                       "description":  "Structured coauthoring workflow for documentation, PRDs, RFCs, technical specs, decision records, proposals, handoffs, roadmaps, postmortems, and project plans. Use when the user wants to write, refine, review, or stress-test a substantial document so it is clear for real readers and execution-ready.",
+                       "skill_md":  "skills/codex/doc-coauthoring/SKILL.md",
+                       "package_root":  "skills/codex/doc-coauthoring",
+                       "scope":  "codex",
+                       "has_openai_yaml":  true,
+                       "file_count":  2,
+                       "byte_count":  2250
+                   },
+                   {
+                       "name":  "enhance-prompt",
+                       "description":  "Transforms vague UI ideas into polished, Stitch-optimized prompts. Enhances specificity, adds UI/UX keywords, injects design system context, and structures output for better generation results.",
+                       "skill_md":  "skills/codex/enhance-prompt/SKILL.md",
+                       "package_root":  "skills/codex/enhance-prompt",
+                       "scope":  "codex",
+                       "has_openai_yaml":  false,
+                       "file_count":  3,
+                       "byte_count":  10513
+                   },
+                   {
+                       "name":  "stitch::extract-design-md",
+                       "description":  "\u003e-",
+                       "skill_md":  "skills/codex/extract-design-md/SKILL.md",
+                       "package_root":  "skills/codex/extract-design-md",
+                       "scope":  "codex",
+                       "has_openai_yaml":  false,
+                       "file_count":  7,
+                       "byte_count":  38982
+                   },
+                   {
+                       "name":  "stitch::extract-static-html",
+                       "description":  "\u003e-",
+                       "skill_md":  "skills/codex/extract-static-html/SKILL.md",
+                       "package_root":  "skills/codex/extract-static-html",
+                       "scope":  "codex",
+                       "has_openai_yaml":  false,
+                       "file_count":  4,
+                       "byte_count":  105006
+                   },
+                   {
+                       "name":  "frontend-design",
+                       "description":  "Production frontend design and implementation guardrails for web apps, pages, dashboards, landing pages, React components, HTML/CSS layouts, and UI polish. Use when creating, redesigning, beautifying, or reviewing frontend interfaces that need a distinctive visual direction, strong UX, responsive behavior, accessibility basics, and avoidance of generic AI-looking design.",
+                       "skill_md":  "skills/codex/frontend-design/SKILL.md",
+                       "package_root":  "skills/codex/frontend-design",
+                       "scope":  "codex",
+                       "has_openai_yaml":  true,
+                       "file_count":  2,
+                       "byte_count":  2553
+                   },
+                   {
+                       "name":  "stitch::generate-design",
+                       "description":  "\u003e-",
+                       "skill_md":  "skills/codex/generate-design/SKILL.md",
+                       "package_root":  "skills/codex/generate-design",
+                       "scope":  "codex",
+                       "has_openai_yaml":  false,
+                       "file_count":  4,
+                       "byte_count":  17828
+                   },
+                   {
+                       "name":  "hatch-pet",
+                       "description":  "Create, repair, validate, visually QA, and package Codex-compatible animated pets and pet spritesheets from character art, generated images, company or prospect brand cues, or visual references. Use when a user wants a lightweight-worker Codex pet workflow, a non-pixel custom pet style, a prospect or company mascot pet, or a full 8x9 animated pet atlas with transparent unused cells, QA contact sheets, and pet.json packaging. This skill composes the installed $imagegen system skill for visual generation and uses bundled scripts for deterministic spritesheet assembly.",
+                       "skill_md":  "skills/codex/hatch-pet/SKILL.md",
+                       "package_root":  "skills/codex/hatch-pet",
+                       "scope":  "codex",
+                       "has_openai_yaml":  true,
+                       "file_count":  14,
+                       "byte_count":  135670
+                   },
+                   {
+                       "name":  "impeccable",
+                       "description":  "Use when the user wants to design, redesign, shape, critique, audit, polish, clarify, distill, harden, optimize, adapt, animate, colorize, extract, or otherwise improve a frontend interface. Covers websites, landing pages, dashboards, product UI, app shells, components, forms, settings, onboarding, and empty states. Handles UX review, visual hierarchy, information architecture, cognitive load, accessibility, performance, responsive behavior, theming, anti-patterns, typography, fonts, spacing, layout, alignment, color, motion, micro-interactions, UX copy, error states, edge cases, i18n, and reusable design systems or tokens. Also use for bland designs that need to become bolder or more delightful, loud designs that should become quieter, live browser iteration on UI elements, or ambitious visual effects that should feel technically extraordinary. Not for backend-only or non-UI tasks.",
+                       "skill_md":  "skills/codex/impeccable/SKILL.md",
+                       "package_root":  "skills/codex/impeccable",
+                       "scope":  "codex",
+                       "has_openai_yaml":  false,
+                       "file_count":  62,
+                       "byte_count":  794452
+                   },
+                   {
+                       "name":  "internal-comms",
+                       "description":  "Practical internal communication writing workflow for status reports, 3P updates, leadership updates, project updates, incident reports, FAQs, launch notes, team announcements, and executive summaries. Use when the user asks to write, polish, summarize, or package work for teammates, stakeholders, leadership, or future handoff.",
+                       "skill_md":  "skills/codex/internal-comms/SKILL.md",
+                       "package_root":  "skills/codex/internal-comms",
+                       "scope":  "codex",
+                       "has_openai_yaml":  true,
+                       "file_count":  2,
+                       "byte_count":  2051
+                   },
+                   {
+                       "name":  "karpathy-guidelines",
+                       "description":  "Coding discipline guardrails for writing, reviewing, debugging, or refactoring code with fewer LLM-agent mistakes. Use when a task touches source files, tests, architecture, bug fixes, feature implementation, refactors, cleanup, or code review and needs explicit assumptions, simple solutions, surgical diffs, existing-style consistency, and verifiable success criteria.",
+                       "skill_md":  "skills/codex/karpathy-guidelines/SKILL.md",
+                       "package_root":  "skills/codex/karpathy-guidelines",
+                       "scope":  "codex",
+                       "has_openai_yaml":  true,
+                       "file_count":  2,
+                       "byte_count":  3063
+                   },
+                   {
+                       "name":  "stitch::manage-design-system",
+                       "description":  "\u003e-",
+                       "skill_md":  "skills/codex/manage-design-system/SKILL.md",
+                       "package_root":  "skills/codex/manage-design-system",
+                       "scope":  "codex",
+                       "has_openai_yaml":  false,
+                       "file_count":  3,
+                       "byte_count":  12467
+                   },
+                   {
+                       "name":  "mcp-builder",
+                       "description":  "MCP server design, implementation, and review workflow for Model Context Protocol integrations. Use when building or auditing MCP servers, tools, resources, prompts, connectors, external API integrations, tool schemas, authentication boundaries, error handling, pagination, or agent-facing workflow tools in Python, TypeScript, or another runtime.",
+                       "skill_md":  "skills/codex/mcp-builder/SKILL.md",
+                       "package_root":  "skills/codex/mcp-builder",
+                       "scope":  "codex",
+                       "has_openai_yaml":  true,
+                       "file_count":  2,
+                       "byte_count":  2388
+                   },
+                   {
+                       "name":  "product-engineering-auditor",
+                       "description":  "Default senior product-engineering router and audit workflow for substantial prompts about software products, apps, codebases, design, UX, architecture, implementation, debugging, refactoring, performance, security, backend, QA, MVP strategy, execution prompts, or production readiness. Use when the user asks to route work through all relevant skills, act like a complete technical team, review or improve a product, generate a practical roadmap, or produce an implementation-ready prompt. This skill should select and invoke only the specialist skills that fit the task instead of loading unrelated skills.",
+                       "skill_md":  "skills/codex/product-engineering-auditor/SKILL.md",
+                       "package_root":  "skills/codex/product-engineering-auditor",
+                       "scope":  "codex",
+                       "has_openai_yaml":  true,
+                       "file_count":  2,
+                       "byte_count":  9545
+                   },
+                   {
+                       "name":  "react:components",
+                       "description":  "Converts Stitch designs into modular Vite and React components using system-level networking and AST-based validation.",
+                       "skill_md":  "skills/codex/react-components/SKILL.md",
+                       "package_root":  "skills/codex/react-components",
+                       "scope":  "codex",
+                       "has_openai_yaml":  false,
+                       "file_count":  11,
+                       "byte_count":  21166
+                   },
+                   {
+                       "name":  "remotion",
+                       "description":  "Generate walkthrough videos from Stitch projects using Remotion with smooth transitions, zooming, and text overlays",
+                       "skill_md":  "skills/codex/remotion/SKILL.md",
+                       "package_root":  "skills/codex/remotion",
+                       "scope":  "codex",
+                       "has_openai_yaml":  false,
+                       "file_count":  7,
+                       "byte_count":  27375
+                   },
+                   {
+                       "name":  "shadcn-ui",
+                       "description":  "Expert guidance for integrating and building applications with shadcn/ui components, including component discovery, installation, customization, and best practices.",
+                       "skill_md":  "skills/codex/shadcn-ui/SKILL.md",
+                       "package_root":  "skills/codex/shadcn-ui",
+                       "scope":  "codex",
+                       "has_openai_yaml":  false,
+                       "file_count":  10,
+                       "byte_count":  85232
+                   },
+                   {
+                       "name":  "stitch-loop",
+                       "description":  "Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing loop pattern",
+                       "skill_md":  "skills/codex/stitch-loop/SKILL.md",
+                       "package_root":  "skills/codex/stitch-loop",
+                       "scope":  "codex",
+                       "has_openai_yaml":  false,
+                       "file_count":  6,
+                       "byte_count":  20916
+                   },
+                   {
+                       "name":  "taste-design",
+                       "description":  "Semantic Design System Skill for Google Stitch. Generates agent-friendly DESIGN.md files that enforce premium, anti-generic UI standards â€” strict typography, calibrated color, asymmetric layouts, perpetual micro-motion, and hardware-accelerated performance.",
+                       "skill_md":  "skills/codex/taste-design/SKILL.md",
+                       "package_root":  "skills/codex/taste-design",
+                       "scope":  "codex",
+                       "has_openai_yaml":  false,
+                       "file_count":  2,
+                       "byte_count":  25215
+                   },
+                   {
+                       "name":  "design-taste-frontend",
+                       "description":  "Senior UI/UX Engineer. Architect digital interfaces overriding default LLM biases. Enforces metric-based rules, strict component architecture, CSS hardware acceleration, and balanced design engineering.",
+                       "skill_md":  "skills/codex/taste-skill/SKILL.md",
+                       "package_root":  "skills/codex/taste-skill",
+                       "scope":  "codex",
+                       "has_openai_yaml":  false,
+                       "file_count":  1,
+                       "byte_count":  21140
+                   },
+                   {
+                       "name":  "ui-ux-pro-max",
+                       "description":  "UI/UX design intelligence. 67 styles, 96 palettes, 57 font pairings, 25 charts, 13 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter, Tailwind, shadcn/ui). Actions: plan, build, create, design, implement, review, fix, improve, optimize, enhance, refactor, check UI/UX code. Projects: website, landing page, dashboard, admin panel, e-commerce, SaaS, portfolio, blog, mobile app, .html, .tsx, .vue, .svelte. Elements: button, modal, navbar, sidebar, card, table, form, chart. Styles: glassmorphism, claymorphism, minimalism, brutalism, neumorphism, bento grid, dark mode, responsive, skeuomorphism, flat design. Topics: color palette, accessibility, animation, layout, typography, font pairing, spacing, hover, shadow, gradient. Integrations: shadcn/ui MCP for component search and examples.",
+                       "skill_md":  "skills/codex/ui-ux-pro-max/SKILL.md",
+                       "package_root":  "skills/codex/ui-ux-pro-max",
+                       "scope":  "codex",
+                       "has_openai_yaml":  false,
+                       "file_count":  28,
+                       "byte_count":  505867
+                   },
+                   {
+                       "name":  "stitch::upload-to-stitch",
+                       "description":  "\u003e-",
+                       "skill_md":  "skills/codex/upload-to-stitch/SKILL.md",
+                       "package_root":  "skills/codex/upload-to-stitch",
+                       "scope":  "codex",
+                       "has_openai_yaml":  false,
+                       "file_count":  2,
+                       "byte_count":  9578
+                   },
+                   {
+                       "name":  "webapp-testing",
+                       "description":  "Local web application testing workflow for browser automation, Playwright-style checks, screenshots, console logs, UI behavior debugging, responsive verification, and regression QA. Use when verifying a local web app, testing a frontend change, reproducing UI bugs, checking browser console errors, or validating user flows after implementation.",
+                       "skill_md":  "skills/codex/webapp-testing/SKILL.md",
+                       "package_root":  "skills/codex/webapp-testing",
+                       "scope":  "codex",
+                       "has_openai_yaml":  true,
+                       "file_count":  2,
+                       "byte_count":  2380
+                   },
+                   {
+                       "name":  "website-builder-setup",
+                       "description":  "Install and verify the AI website builder stack: UI/UX Pro Max, Motion/Framer Motion, 21st.dev Magic, Taste, Emil Design Engineering, Impeccable, and Stitch skills.",
+                       "skill_md":  "skills/codex/website-builder-setup/SKILL.md",
+                       "package_root":  "skills/codex/website-builder-setup",
+                       "scope":  "codex",
+                       "has_openai_yaml":  false,
+                       "file_count":  1,
+                       "byte_count":  6012
+                   },
+                   {
+                       "name":  "nuude-ecommerce",
+                       "description":  "Build and review the NUUDE premium lipstick e-commerce experience, including homepage sections, product pages, shade selection, conversion flows, responsive behavior, and brand-specific visual rules. Use for NUUDE storefront work in Stitch or frontend code.",
+                       "skill_md":  "skills/projects/nuude/nuude-ecommerce/SKILL.md",
+                       "package_root":  "skills/projects/nuude/nuude-ecommerce",
+                       "scope":  "projects",
+                       "has_openai_yaml":  false,
+                       "file_count":  1,
+                       "byte_count":  3172
+                   },
+                   {
+                       "name":  "premium-ui",
+                       "description":  "Apply premium e-commerce UX patterns for product galleries, shade selectors, mobile sticky actions, loading states, accessibility, and conversion-focused interface polish. Use when building or reviewing NUUDE product UI.",
+                       "skill_md":  "skills/projects/nuude/premium-ui/SKILL.md",
+                       "package_root":  "skills/projects/nuude/premium-ui",
+                       "scope":  "projects",
+                       "has_openai_yaml":  false,
+                       "file_count":  1,
+                       "byte_count":  2084
+                   },
+                   {
+                       "name":  "stitch-frontend",
+                       "description":  "Build NUUDE frontend components with Stitch-oriented component structure, mobile-first responsive CSS, brand tokens, accessibility, and reusable implementation patterns. Use for NUUDE Stitch or React frontend implementation.",
+                       "skill_md":  "skills/projects/nuude/stitch-frontend/SKILL.md",
+                       "package_root":  "skills/projects/nuude/stitch-frontend",
+                       "scope":  "projects",
+                       "has_openai_yaml":  false,
+                       "file_count":  1,
+                       "byte_count":  2371
+                   },
+                   {
+                       "name":  "phere-creative-director",
+                       "description":  "Use when designing, building, reviewing, or polishing the Phere marketing website, launch pages, wedding tracking UI, premium hero/mockups/animations, lead capture flows, SEO, or release QA for phere-website.",
+                       "skill_md":  "skills/projects/phere-website/phere-creative-director/SKILL.md",
+                       "package_root":  "skills/projects/phere-website/phere-creative-director",
+                       "scope":  "projects",
+                       "has_openai_yaml":  true,
+                       "file_count":  3,
+                       "byte_count":  4745
+                   },
+                   {
+                       "name":  "qa-agent",
+                       "description":  "Use when the user asks to test a website, CRM flow, login flow, dashboard, form, report, responsiveness, console/network health, UI/UX bugs, or to generate a QA report with screenshots using the local QaAgent repo.",
+                       "skill_md":  "skills/projects/qaagent/qa-agent/SKILL.md",
+                       "package_root":  "skills/projects/qaagent/qa-agent",
+                       "scope":  "projects",
+                       "has_openai_yaml":  false,
+                       "file_count":  1,
+                       "byte_count":  8062
+                   },
+                   {
+                       "name":  "website-qa-agent",
+                       "description":  "Run safe, evidence-based website and CRM QA with the QaAgent framework, including login flows, module checks, test-data handling, screenshots, browser-state inspection, bug reporting, and the repository quality gate.",
+                       "skill_md":  "skills/projects/qaagent/website-qa-agent/SKILL.md",
+                       "package_root":  "skills/projects/qaagent/website-qa-agent",
+                       "scope":  "projects",
+                       "has_openai_yaml":  false,
+                       "file_count":  3,
+                       "byte_count":  6616
+                   },
+                   {
+                       "name":  "phere-9-agent-manager",
+                       "description":  "Use when managing the Phere/Shaadikhata app through the named Phere 9-Agent Manager developer workflow, including enterprise-style engineering agents, planner, product, frontend, backend, Supabase/database, tester, production, security, architecture, performance, observability, documentation, data/AI, truthfulness checks, and optional post-code business agents such as marketing and sales. Trigger when the user asks for agents, an agent manager, deep agent training, planner/tester/production agents, evidence-based app maintenance, release coordination, or a multi-agent development team.",
+                       "skill_md":  "skills/projects/shaadikhata/phere-9-agent-manager/SKILL.md",
+                       "package_root":  "skills/projects/shaadikhata/phere-9-agent-manager",
+                       "scope":  "projects",
+                       "has_openai_yaml":  true,
+                       "file_count":  12,
+                       "byte_count":  41097
+                   },
+                   {
+                       "name":  "supabase",
+                       "description":  "Use when doing ANY task involving Supabase. Triggers: Supabase products (Database, Auth, Edge Functions, Realtime, Storage, Vectors, Cron, Queues); client libraries and SSR integrations (supabase-js, @supabase/ssr) in Next.js, React, SvelteKit, Astro, Remix; auth issues (login, logout, sessions, JWT, cookies, getSession, getUser, getClaims, RLS); Supabase CLI or MCP server; schema changes, migrations, security audits, Postgres extensions (pg_graphql, pg_cron, pg_vector).",
+                       "skill_md":  "skills/projects/shaadikhata/supabase/SKILL.md",
+                       "package_root":  "skills/projects/shaadikhata/supabase",
+                       "scope":  "projects",
+                       "has_openai_yaml":  false,
+                       "file_count":  3,
+                       "byte_count":  10485
+                   },
+                   {
+                       "name":  "supabase-postgres-best-practices",
+                       "description":  "Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations.",
+                       "skill_md":  "skills/projects/shaadikhata/supabase-postgres-best-practices/SKILL.md",
+                       "package_root":  "skills/projects/shaadikhata/supabase-postgres-best-practices",
+                       "scope":  "projects",
+                       "has_openai_yaml":  false,
+                       "file_count":  35,
+                       "byte_count":  56973
+                   },
+                   {
+                       "name":  "debugging-strategies",
+                       "description":  "Systematic debugging for Wrkly\u0027s full-stack TypeScript monorepo â€” reproduce, trace, fix, verify.",
+                       "skill_md":  "skills/projects/wrkly/debugging-strategies/SKILL.md",
+                       "package_root":  "skills/projects/wrkly/debugging-strategies",
+                       "scope":  "projects",
+                       "has_openai_yaml":  false,
+                       "file_count":  1,
+                       "byte_count":  3252
+                   },
+                   {
+                       "name":  "lint-and-validate",
+                       "description":  "MANDATORY: Run validation after EVERY code change. No task is done until the code is error-free.",
+                       "skill_md":  "skills/projects/wrkly/lint-and-validate/SKILL.md",
+                       "package_root":  "skills/projects/wrkly/lint-and-validate",
+                       "scope":  "projects",
+                       "has_openai_yaml":  false,
+                       "file_count":  1,
+                       "byte_count":  1887
+                   },
+                   {
+                       "name":  "supabase-postgres-best-practices",
+                       "description":  "Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations.",
+                       "skill_md":  "skills/projects/wrkly/supabase-postgres-best-practices/SKILL.md",
+                       "package_root":  "skills/projects/wrkly/supabase-postgres-best-practices",
+                       "scope":  "projects",
+                       "has_openai_yaml":  false,
+                       "file_count":  38,
+                       "byte_count":  62597
+                   },
+                   {
+                       "name":  "test-driven-development",
+                       "description":  "Use when implementing any feature or bugfix in Wrkly â€” write the test first, watch it fail, write minimal code to pass.",
+                       "skill_md":  "skills/projects/wrkly/test-driven-development/SKILL.md",
+                       "package_root":  "skills/projects/wrkly/test-driven-development",
+                       "scope":  "projects",
+                       "has_openai_yaml":  false,
+                       "file_count":  1,
+                       "byte_count":  3025
+                   },
+                   {
+                       "name":  "wrkly-design-system",
+                       "description":  "Apply Wrkly\u0027s exact design standards to any UI component or page",
+                       "skill_md":  "skills/projects/wrkly/wrkly-design-system/SKILL.md",
+                       "package_root":  "skills/projects/wrkly/wrkly-design-system",
+                       "scope":  "projects",
+                       "has_openai_yaml":  false,
+                       "file_count":  1,
+                       "byte_count":  4010
+                   }
+               ],
+    "agents":  [
+                   {
+                       "format":  "codex-toml",
+                       "path":  "agents/codex/wrkly/wrkly-code-reviewer.toml",
+                       "bytes":  2074
+                   },
+                   {
+                       "format":  "codex-toml",
+                       "path":  "agents/codex/wrkly/wrkly-debugger.toml",
+                       "bytes":  1720
+                   },
+                   {
+                       "format":  "codex-toml",
+                       "path":  "agents/codex/wrkly/wrkly-doc-writer.toml",
+                       "bytes":  1298
+                   },
+                   {
+                       "format":  "codex-toml",
+                       "path":  "agents/codex/wrkly/wrkly-refactorer.toml",
+                       "bytes":  1751
+                   },
+                   {
+                       "format":  "codex-toml",
+                       "path":  "agents/codex/wrkly/wrkly-security-auditor.toml",
+                       "bytes":  2259
+                   },
+                   {
+                       "format":  "codex-toml",
+                       "path":  "agents/codex/wrkly/wrkly-test-writer.toml",
+                       "bytes":  2040
+                   },
+                   {
+                       "format":  "claude-markdown",
+                       "path":  "agents/claude/wrkly/code-reviewer.md",
+                       "bytes":  2081
+                   },
+                   {
+                       "format":  "claude-markdown",
+                       "path":  "agents/claude/wrkly/debugger.md",
+                       "bytes":  1717
+                   },
+                   {
+                       "format":  "claude-markdown",
+                       "path":  "agents/claude/wrkly/doc-writer.md",
+                       "bytes":  1325
+                   },
+                   {
+                       "format":  "claude-markdown",
+                       "path":  "agents/claude/wrkly/refactorer.md",
+                       "bytes":  1783
+                   },
+                   {
+                       "format":  "claude-markdown",
+                       "path":  "agents/claude/wrkly/security-auditor.md",
+                       "bytes":  2267
+                   },
+                   {
+                       "format":  "claude-markdown",
+                       "path":  "agents/claude/wrkly/test-writer.md",
+                       "bytes":  1917
+                   }
+               ],
+    "plugins":  [
+                    {
+                        "name":  "phere",
+                        "version":  "0.1.0",
+                        "path":  "plugins/phere/.codex-plugin/plugin.json"
+                    },
+                    {
+                        "name":  "qa-agent",
+                        "version":  "0.1.0",
+                        "path":  "plugins/qa-agent/.codex-plugin/plugin.json"
+                    },
+                    {
+                        "name":  "skilled-agents",
+                        "version":  "1.0.0",
+                        "path":  "plugins/skilled-agents/.codex-plugin/plugin.json"
+                    }
+                ],
+    "excluded_scope":  [
+                           "Built-in .system skills",
+                           "OpenAI bundled and curated plugin caches",
+                           "Vercel plugin caches",
+                           "Auth files, sessions, browser profiles, env files, databases, runtime logs, and generated run/status folders",
+                           "Unlicensed upstream source snapshots; these remain reference-only in external-skills.json"
+                       ]
+}
